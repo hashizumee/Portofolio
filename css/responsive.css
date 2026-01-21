@@ -1,0 +1,261 @@
+/* ===============================================
+   RESPONSIVE STYLES - Cybersecurity Portfolio
+   =============================================== */
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container-xl {
+        max-width: 1200px;
+    }
+}
+
+/* Large Devices (992px and up) */
+@media (min-width: 992px) {
+    .hero-content {
+        padding: 3rem 0;
+    }
+}
+
+/* Medium Devices (768px and up) */
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: none !important;
+    }
+    
+    .profile-image img {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+/* Tablet Devices (768px to 991px) */
+@media (max-width: 991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .section-padding {
+        padding: 3rem 0;
+    }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 767px) {
+    /* Navbar */
+    #navbar {
+        padding: 0.5rem 0;
+    }
+    
+    #mobile-menu {
+        background-color: rgba(17, 24, 39, 0.98);
+    }
+    
+    /* Hero Section */
+    #home {
+        padding-top: 5rem;
+        min-height: auto;
+    }
+    
+    .profile-image img {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* About Section */
+    #about .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Certificate Slider */
+    #cert-slider {
+        padding: 0 1rem;
+    }
+    
+    /* Contact Form */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+    
+    footer .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Buttons */
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group a,
+    .btn-group button {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices (less than 576px) */
+@media (max-width: 575px) {
+    /* Typography */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1.125rem;
+    }
+    
+    p {
+        font-size: 0.875rem;
+    }
+    
+    /* Spacing */
+    .section-padding {
+        padding: 2rem 0;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Profile Image */
+    .profile-image img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    /* Cards */
+    .card {
+        padding: 1rem;
+    }
+    
+    /* Skills */
+    .skill-item {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Projects */
+    .project-card img {
+        height: 150px;
+    }
+    
+    /* Certificate Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    /* Form */
+    input,
+    textarea,
+    button {
+        font-size: 0.875rem;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    #home {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .profile-image img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    #hero-content {
+        padding: 1rem 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    nav,
+    footer,
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* High Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-image img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark Mode Support (if needed) */
+@media (prefers-color-scheme: light) {
+    /* Add light mode styles here if needed */
+}
+
+/* Container Queries (Modern Browsers) */
+@container (max-width: 768px) {
+    .container-responsive {
+        padding: 1rem;
+    }
+}
